@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/homeFragment"
+        android:icon="@drawable/ic_home_24"
+        android:title="Home" />
+    <item
+        android:id="@+id/transaksiFragment"
+        android:icon="@drawable/ic_payments_24"
+        android:title="Transaksi" />
+    <item
+        android:id="@+id/profilFragment"
+        android:icon="@drawable/ic_baseline_manage_accounts_24"
+        android:title="Profil" />
+</menu>

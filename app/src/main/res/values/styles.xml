@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.Findbarber" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/primarycolor</item>
+        <item name="colorSecondary">@color/secondcolor</item>
+        <item name="colorAccent">@color/black</item>
+        <item name="colorOnSecondary">@color/white</item>
+    </style>
+</resources>
