@@ -46,7 +46,8 @@
         android:textSize="14dp"
         android:layout_centerHorizontal="true"
         android:background="@drawable/button_shape"
-        android:id="@+id/btn_1"/>
+        android:id="@+id/btn_1"
+        android:onClick="toWelcome"/>
 
 
 

@@ -3,7 +3,9 @@ package com.example.findbarber
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import kotlinx.android.synthetic.main.activity_main.*
+import android.view.View
+
+//import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -14,9 +16,13 @@ class MainActivity : AppCompatActivity() {
     }
     private fun btnWelcomeListener()
     {
-        btn_1.setOnClickListener{
-            startActivity(Intent(this, WelcomeActivity::class.java))
-        }
+//        btn_1.setOnClickListener{
+//            startActivity(Intent(this, WelcomeActivity::class.java))
+//        }
+    }
+
+    fun toWelcome(v : View){
+        startActivity(Intent(this, WelcomeActivity::class.java))
     }
 
 

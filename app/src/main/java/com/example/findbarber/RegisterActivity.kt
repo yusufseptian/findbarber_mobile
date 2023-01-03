@@ -3,8 +3,10 @@ package com.example.findbarber
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import kotlinx.android.synthetic.main.activity_login.*
-import kotlinx.android.synthetic.main.activity_register.*
+import android.view.View
+
+//import kotlinx.android.synthetic.main.activity_login.*
+//import kotlinx.android.synthetic.main.activity_register.*
 
 class RegisterActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -14,8 +16,12 @@ class RegisterActivity : AppCompatActivity() {
 
     }
     private fun btnBackRegisterListener(){
-        r_img.setOnClickListener{
-            startActivity(Intent(this, MainActivity::class.java))
-        }
+//        r_img.setOnClickListener{
+//            startActivity(Intent(this, MainActivity::class.java))
+//        }
+    }
+
+    fun back(v : View){
+        finish()
     }
 }
