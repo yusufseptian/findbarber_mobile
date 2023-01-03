@@ -5,12 +5,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".HomeActivity">
-<androidx.recyclerview.widget.RecyclerView
-    android:layout_width="match_parent"
-    android:scrollbars="vertical"
-    android:id="@+id/barber_show"
-    android:layout_height="match_parent"
-    tools:listitem="@layout/fragment_home"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:scrollbars="vertical"
+        android:id="@+id/barber_show"
+        android:layout_height="match_parent"
+        tools:listitem="@layout/card_barber"/>
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomView"
         android:layout_width="match_parent"
@@ -32,4 +32,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:navGraph="@navigation/my_nav" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
