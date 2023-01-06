@@ -8,4 +8,6 @@ import kotlinx.parcelize.Parcelize
 data class Barbershop(
     val imgBarber: Int,
     val titleBarber: String,
+    val addressBarber: String,
+    val jarakBarber: String,
 ) : Parcelable

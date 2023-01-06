@@ -5,4 +5,6 @@
     <color name="black">#000000</color>
     <color name="white">#FFFFFF</color>
     <color name="background">#EEEEEE</color>
+    <color name="dark">#2b2c34</color>
+    <color name="abu2">#747573</color>
 </resources>

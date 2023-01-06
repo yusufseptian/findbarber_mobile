@@ -25,8 +25,8 @@
                 
                 <ImageView
                     android:id="@+id/img_profil"
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
                     android:layout_centerVertical="true"
                     android:src="@drawable/man"/>
 
@@ -71,10 +71,10 @@
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:drawableStart="@drawable/ic_baseline_person_24"
+                    android:drawableStart="@drawable/ic_person"
                     android:drawablePadding="10dp"
 
-                    android:text="Nama Lengkap User"/>
+                    android:text="Muhammad Yusuf Septian"/>
 
             </com.google.android.material.textfield.TextInputLayout>
             <com.google.android.material.textfield.TextInputLayout
@@ -88,9 +88,9 @@
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:drawableStart="@drawable/ic_baseline_person_24"
+                    android:drawableStart="@drawable/ic_home"
                     android:drawablePadding="10dp"
-                    android:text="Alamat User"/>
+                    android:text="Muntilan, Magelang"/>
 
             </com.google.android.material.textfield.TextInputLayout>
             <com.google.android.material.textfield.TextInputLayout
@@ -104,9 +104,9 @@
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:drawableStart="@drawable/ic_baseline_person_24"
+                    android:drawableStart="@drawable/ic_cal"
                     android:drawablePadding="10dp"
-                    android:text="Telepon User"/>
+                    android:text="081225333621"/>
 
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -121,9 +121,9 @@
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:drawableStart="@drawable/ic_baseline_person_24"
+                    android:drawableStart="@drawable/ic_email"
                     android:drawablePadding="10dp"
-                    android:text="Email User"/>
+                    android:text="yusufseptian39@gmail.com"/>
 
             </com.google.android.material.textfield.TextInputLayout>
 

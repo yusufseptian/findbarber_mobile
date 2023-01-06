@@ -2,15 +2,15 @@
 <LinearLayout
     android:layout_height="wrap_content"
     android:layout_width="match_parent"
+    android:layout_marginHorizontal="10dp"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:background="@color/background"
+    android:background="@color/white"
     xmlns:card_view="http://schemas.android.com/apk/res-auto">
     <androidx.cardview.widget.CardView
-        xmlns:card_view="http://schemas.android.com/apk/res-auto"
         android:id="@+id/card_view"
         android:layout_width="match_parent"
-        android:layout_height="260dp"
+        android:layout_height="220dp"
         android:layout_margin="10dp"
         card_view:cardCornerRadius="10dp">
         
@@ -18,22 +18,43 @@
             android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
-            
             <ImageView
                 android:id="@+id/img_cover"
                 android:layout_width="match_parent"
-                android:layout_height="200dp"
+                android:layout_height="150dp"
                 android:scaleType="centerCrop"
                 android:background="@color/secondcolor"/>
-            <TextView
-                android:id="@+id/title_barber"
+            <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="@string/nama_barber"
-                android:padding="10dp"
-                android:textSize="18dp"
-                android:textColor="@color/black"
-                android:textStyle="bold"/>
+                android:layout_height="wrap_content"
+                >
+                <TextView
+                    android:id="@+id/title_barber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/nama_barber"
+                    android:padding="10dp"
+                    android:textSize="16dp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/address_barber"
+                    android:layout_below="@+id/title_barber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/alamat_barber"
+                    android:paddingLeft="10dp"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/jarak_barber"
+                    android:layout_alignParentEnd="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/jarak_barber"
+                    android:padding="10dp"
+                    android:textSize="14dp"
+                    android:textStyle="bold"/>
+            </RelativeLayout>
         </LinearLayout>
         </androidx.cardview.widget.CardView>
 </LinearLayout>

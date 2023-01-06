@@ -11,6 +11,11 @@
         android:label="fragment_home"
         tools:layout="@layout/fragment_home" />
     <fragment
+        android:id="@+id/antrianFragment"
+        android:name="com.example.findbarber.AntrianFragment"
+        android:label="fragment_antrian"
+        tools:layout="@layout/fragment_antrian" />
+    <fragment
         android:id="@+id/transaksiFragment"
         android:name="com.example.findbarber.transaksiFragment"
         android:label="fragment_transaksi"
@@ -20,4 +25,5 @@
         android:name="com.example.findbarber.profilFragment"
         android:label="fragment_profil"
         tools:layout="@layout/fragment_profil" />
+
 </navigation>

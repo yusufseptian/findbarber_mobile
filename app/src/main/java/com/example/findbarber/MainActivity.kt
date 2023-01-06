@@ -12,18 +12,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        btnWelcomeListener()
     }
-    private fun btnWelcomeListener()
-    {
-//        btn_1.setOnClickListener{
-//            startActivity(Intent(this, WelcomeActivity::class.java))
-//        }
-    }
-
     fun toWelcome(v : View){
         startActivity(Intent(this, WelcomeActivity::class.java))
     }
-
-
 }

@@ -5,12 +5,19 @@
         android:id="@+id/homeFragment"
         android:icon="@drawable/ic_home_24"
         android:title="Home" />
+    <item android:title="Antrian"
+        android:id="@+id/antrianFragment"
+        android:icon="@drawable/ic_peoples"
+
+        />
     <item
         android:id="@+id/transaksiFragment"
         android:icon="@drawable/ic_payments_24"
         android:title="Transaksi" />
+
     <item
         android:id="@+id/profilFragment"
-        android:icon="@drawable/ic_baseline_manage_accounts_24"
+        android:iconTint="@color/white"
+        android:icon="@drawable/ic_person"
         android:title="Profil" />
 </menu>
