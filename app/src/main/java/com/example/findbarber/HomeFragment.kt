@@ -7,14 +7,16 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.TextView
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.findbarber.helper.SessionManager
 
 class HomeFragment : Fragment() {
+    private lateinit var sessionManager: SessionManager
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-
     ): View? {
         // Inflate the layout for this fragment
         var v = inflater.inflate(R.layout.fragment_home, container, false)
@@ -53,6 +55,8 @@ class HomeFragment : Fragment() {
         v.findViewById<Button>(R.id.maps).setOnClickListener{
             startActivity(Intent(context, MapsActivity::class.java))
         }
+        sessionManager = SessionManager(v.context, "login")
+        v.findViewById<TextView>(R.id.h_txt2).text = sessionManager.get("nama")
         return v
     }
 }
