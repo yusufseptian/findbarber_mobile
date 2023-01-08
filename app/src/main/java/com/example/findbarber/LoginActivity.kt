@@ -37,7 +37,7 @@ class LoginActivity : AppCompatActivity() {
                         sessionManager.set("nama", response.body()!!.du_nama)
                         startActivity(Intent(this@LoginActivity, HomeActivity::class.java))
                     } else {
-                        Toast.makeText(this@LoginActivity, "Username atau password salah", Toast.LENGTH_SHORT).show()
+                        Toast.makeText(this@LoginActivity, response!!.body()?.msg, Toast.LENGTH_SHORT).show()
                     }
                 } else {
                     Toast.makeText(this@LoginActivity, "Gagal load data", Toast.LENGTH_SHORT).show()
