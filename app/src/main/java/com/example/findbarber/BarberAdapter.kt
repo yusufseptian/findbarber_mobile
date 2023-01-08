@@ -11,24 +11,26 @@ import android.widget.TextView
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
+import com.example.findbarber.model.ApiBarber
+import com.example.findbarber.repository.Repository
 
-class BarberAdapter(private val context: Context, private val barbershop: List<Barbershop>)
+class BarberAdapter(private val context: Context, private val barbershop: List<ApiBarber>)
     :RecyclerView.Adapter<BarberAdapter.BarbershopViewHolder>(){
 
-    class BarbershopViewHolder(view: View,context: Context):RecyclerView.ViewHolder(view) {
+    inner class BarbershopViewHolder(view: View,context: Context):RecyclerView.ViewHolder(view) {
         val imgBarber = view.findViewById<ImageView>(R.id.img_cover)
         val titleBarber = view.findViewById<TextView>(R.id.title_barber)
         val addressBarber = view.findViewById<TextView>(R.id.address_barber)
-        val jarakBarber = view.findViewById<TextView>(R.id.jarak_barber)
         val vw = view
         val ct = context
 
 
-        fun bindview(barbershop: Barbershop){
-            imgBarber.setImageResource(barbershop.imgBarber)
-            titleBarber.text = barbershop.titleBarber
-            addressBarber.text = barbershop.addressBarber
-            jarakBarber.text = barbershop.jarakBarber
+        fun bindview(barbershop: ApiBarber){
+            Glide.with(ct).load(Repository.baseUrl+"foto_barber/"+barbershop.b_foto).centerCrop().into(imgBarber)
+//            imgBarber.setImageResource(R.drawable.gambar_barber)
+            titleBarber.text = barbershop.b_nama_barber
+            addressBarber.text = barbershop.b_alamat
             vw.setOnClickListener{
                 ct.startActivity(Intent(ct,DetailBarberActivity::class.java))
             }

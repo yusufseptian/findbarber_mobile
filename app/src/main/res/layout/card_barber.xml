@@ -45,15 +45,7 @@
                     android:paddingLeft="10dp"
                     android:textSize="14dp"
                     android:textStyle="bold" />
-                <TextView
-                    android:id="@+id/jarak_barber"
-                    android:layout_alignParentEnd="true"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/jarak_barber"
-                    android:padding="10dp"
-                    android:textSize="14dp"
-                    android:textStyle="bold"/>
+
             </RelativeLayout>
         </LinearLayout>
         </androidx.cardview.widget.CardView>

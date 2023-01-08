@@ -64,9 +64,10 @@
                     android:backgroundTint="@color/white"
                     android:background="@drawable/ic_loc" />
                 <EditText
-                    android:id="@+id/l_username"
+                    android:id="@+id/b_search"
                     android:layout_width="fill_parent"
                     android:layout_height="50dp"
+                    android:inputType="textShortMessage"
                     android:paddingStart="15dp"
                     android:background="@drawable/button_shape_sec"
                     android:hint="Cari Barbershop Favoritmu"/>
