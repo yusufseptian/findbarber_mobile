@@ -9,7 +9,7 @@ import retrofit2.create
 
 object Repository {
     val gson = GsonBuilder().setLenient().create()
-    val baseUrl = "http://192.168.8.180/findbarber/public/"
+    val baseUrl = "http://10.110.177.145/findbarber/public/"
     val retrofit = Retrofit.Builder()
         .baseUrl(baseUrl)
         .addConverterFactory(GsonConverterFactory.create(gson))
